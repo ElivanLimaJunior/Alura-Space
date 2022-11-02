@@ -1,15 +1,17 @@
 import React from "react";
 import Tags from "../tags";
-import styles from "./Galeria.module.scss";
+import style from "./Galeria.module.scss";
 import fotos from "./fotos.json";
 import Cards from "./cards";
 
 export default function Galeria() {
   return (
-    <section className={styles.galeria}>
-      <h2>Navegue pela galeria</h2>
-      <Tags />
-      <Cards itens={fotos} styles={styles} />
+    <section className={style.galeria}>
+      <div className={style.galeriaImg}>
+        <h2>Navegue pela galeria</h2>
+        <Tags />
+        <Cards itens={fotos} style={style} />
+      </div>
     </section>
   );
 }
