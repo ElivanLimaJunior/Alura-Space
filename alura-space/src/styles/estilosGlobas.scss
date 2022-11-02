@@ -33,5 +33,5 @@ body::-webkit-scrollbar {
     src: local("GandhiSansRegular"),
       url("../assets/fontes/GandhiSans-Regular.otf") format("truetype");
     font-weight: 500;
-    font-display: swap;
+    font-display: swap; // Ela garante que a fonte que estamos importando, esse arquivo de fonte que estamos importando no nosso projeto faça com que a fonte seja carregada de uma forma otimizada pelo navegador, assim o nosso arquivo, quando ele é carregado, ele não perde a fonte, o estilo de fonte que está sendo aplicado nele.
   }
