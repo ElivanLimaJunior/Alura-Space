@@ -3,6 +3,7 @@ import Cabecalho from "../../components/Cabecalho";
 import Menu from "../../components/menu";
 import styles from '../../components/banner/banner.module.scss';
 import Rodape from '../../components/rodape'
+import Galeria from "../../components/Galeria";
 
 export default function PaginaInicial() {
     return (
@@ -13,8 +14,10 @@ export default function PaginaInicial() {
                   <Menu />    
                  <Banner />
                  </section>
-                 <Rodape />
             </main>
+            <Galeria />
+                 <Rodape />
+            
         </>
     )
 }
